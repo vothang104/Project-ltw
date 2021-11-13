@@ -1,0 +1,51 @@
+/******************** taplet */
+@media only screen and (max-width: 1023px) {
+    .hide-on-taplet {
+        display: none;
+    }
+    .header-up__search-input {
+        flex: 0 0 90%;
+    }
+    .login-board, .signup-board {
+        border-right: 1px solid var(--red);
+    }
+    .login-board__desc, .signup-board__desc {
+    padding: 30px 10px 30px 20px;
+    }
+    .login-board__socials-option, .signup-board__socials-option {
+        width: 80%;
+        height: 30px;
+        padding: 10px 0;
+        margin-bottom: 5px;
+    }
+    .login-board__socials-item, .signup-board__socials-item {
+        flex-direction: column;
+        align-items: center;
+        height: 70px;
+    }
+}
+/*************************** mobile */
+@media only screen and (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header-up__search-input {
+        flex: 0 0 80%;
+    }
+    .show-on-mobile {
+        display: block;
+    }
+    .header {
+        height: 90px;
+    }.header-up__search {
+        justify-content: space-between;
+    }
+    .modal-sigup {
+        left: 5vw;
+        width: 90vw;
+    }
+    .modal-login {
+        left: 5vw;
+        width: 90vw;
+    }
+}
