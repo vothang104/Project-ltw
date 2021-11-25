@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/enjoy.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/login.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <title>Login</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -91,7 +91,14 @@
                                 <i class="fas fa-user"></i>
                                 <a href="./login.html">Đăng nhập</a>
                                 <!-- <a href="">vothang</a>
-                                <a href="logout" class="header-up__options-logout">Đăng xuất</a> -->
+                                <ul class="header-up__options-login__list">
+                                    <li class="header-up__options-login__item">
+                                        <a class="header-up__options-login__link" href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header-up__options-login__item">
+                                        <a class="header-up__options-login__link" href="">Đăng xuất</a>
+                                    </li>
+                                </ul> -->
                             </div>
                             <div class="header-up__options-enjoy">
                                 <i class="fas fa-heart"></i>
@@ -192,60 +199,202 @@
                 </div>
             </div>
         </header>
-        <div class="login-content">
+        <div class="content-enjoy">
             <div class="grid wide">
-                <div class="login__direct">
-                    <span>Trang chủ</span> / <span>Đăng nhập tài khoản</span>
-                </div>
-                <div class="login__content">
-                    <div class="login-board">
+                <div class="direct"><span>Trang chủ</span> / <span>yêu thích</span></div>
+                <div class="row">
+                    <div class="col l-3 m-3 c-0 ">
+                        <div class="sidebar">
+                            <ul class="sidebar__list">
+                                <li class="sidebar__item">DANH MỤC</li>
+                                <li class="sidebar__item"><a class="sidebar__item-link" href="#">Trang chủ</a></li>
+                                <li class="sidebar__item">Sản phẩm <i class="sidebar__item-icon fas fa-plus"></i></li>
+                                <li style="display: none;" class="sidebar__item">
+                                    <ul class="sidebar__item-list">
+                                        <li class="sidebar__item-listitem">Áo nam<i
+                                                class="sidebar__item-listitem-icon fas fa-plus"></i></li>
+                                        <li class="sidebar__item-listitem item-hide">
+                                            <ul class="sidebar__item-listitem__sublist">
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Sơ mi nam</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Áo thun
+                                                        nam</a></li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Polo nam</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Áo khoác
+                                                        nam</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar__item-listitem">Áo nữ<i
+                                                class="sidebar__item-listitem-icon fas fa-plus"></i></li>
+                                        <li class="sidebar__item-listitem item-hide">
+                                            <ul class="sidebar__item-listitem__sublist">
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Sơ mi nữ</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Áo thun nữ</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Polo nữ</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Áo khoác
+                                                        nữ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar__item-listitem">Quần nam<i
+                                                class="sidebar__item-listitem-icon fas fa-plus"></i></li>
+                                        <li class="sidebar__item-listitem item-hide">
+                                            <ul class="sidebar__item-listitem__sublist">
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Quần jean
+                                                        nam</a></li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Quần kaki
+                                                        nam</a></li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Quần jogger
+                                                        nam</a></li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Quần short
+                                                        nam</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="sidebar__item-listitem">Quần nữ<i
+                                                class="sidebar__item-listitem-icon fas fa-plus"></i></li>
+                                        <li class="sidebar__item-listitem item-hide">
+                                            <ul class="sidebar__item-listitem__sublist">
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Sơ mi nữ</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Áo thun nữ</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Polo nữ</a>
+                                                </li>
+                                                <li class="sidebar__item-listitem__subitem"><a
+                                                        class="sidebar__item-listitem__subitem-link" href="#">Áo khoác
+                                                        nữ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar__item">
+                                    Tin tức
+                                    <i class="sidebar__item-icon fas fa-plus"></i>
+                                </li>
+                                <li style="display: none;" class="sidebar__item">
+                                    <ul class="sidebar__item-list">
+                                        <li class="sidebar__item-listitem"><a class="sidebar__item-listitem-link"
+                                                href="#">Tin xu hướng</a></li>
+                                        <li class="sidebar__item-listitem"><a class="sidebar__item-listitem-link"
+                                                href="#">Tin mẹo vặt</a></li>
+                                        <li class="sidebar__item-listitem"><a class="sidebar__item-listitem-link"
+                                                href="#">Tin khuyến mãi</a></li>
+                                        <li class="sidebar__item-listitem"><a class="sidebar__item-listitem-link"
+                                                href="#">Thẻ quà tặng</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar__item"><a class="sidebar__item-link" href="#">Câu hỏi</a></li>
+                                <li class="sidebar__item"><a class="sidebar__item-link" href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-9 m-9 c-12">
+                        <h2 class="title">YÊU THÍCH</h2>
                         <div class="row">
-                            <div class="col l-8 m-12 c-12">
-                                <form action="" class="login-board__form">
-                                    <h2 class="login-board__form-title">Đăng nhập tài khoản</h2>
-                                    <div class="form-group">
-                                        <input placeholder=" " id="email" type="email" class="login-board__form-input">
-                                        <span class="login-board__form-input__placeholder">Email</span>
-                                        <i class="form-message"></i>
-                                    </div>
-                                    <div class="form-group">
-                                        <input placeholder=" " id="password" type="password" class="login-board__form-input">
-                                        <i class="login-board__icon-view far fa-eye-slash"></i>
-                                        <span class="login-board__form-input__placeholder">Mật khẩu</span>
-                                        <i class="form-message"></i>
-                                    </div>
-                                    <input type="submit" class="login-board__form-btn" value="ĐĂNG NHẬP">
-                                </form>
-                                <div class="login-board__socials">
-                                    <div class="login-board__socials-wrap">
-                                        <span class="login-board__socials-title">Hoặc đăng nhập bằng</span>
-                                        <div class="login-board__socials-item">
-                                            <a href="#" class="login-board__socials-option">
-                                                <i class="login-board__social-icon fab fa-facebook-f"></i>
-                                                <span class="login-board__socials-text">Facebook</span>
-                                            </a>
-                                            <a href="#" class="login-board__socials-option">
-                                                <i class="login-board__social-icon fab fa-google-plus-g"></i>
-                                                <span class="login-board__socials-text">Google</span>
-                                            </a>
+                            <!-- <div class="col l-3 m-4 c-6">
+                                <div class="product">
+                                    <div class="product__wrap-img">
+                                        <a href="#" class="product__link">
+                                            <img src="https://tse3.mm.bing.net/th?id=OIP.MEUyeC5TT8xMQUfBUgUmgwHaH3&pid=Api&P=0&w=300&h=300"
+                                                alt="image product" class="product__img">
+                                        </a>
+                                        <div class="product__size">
+                                            <input id="size-m" class="size-m" type="radio" name="size" value="M" hidden>
+                                            <label for="size-m" class="product__size-option">
+                                                M
+                                            </label>
+                                            <input id="size-l" class="size-l" type="radio" name="size" value="L" hidden>
+                                            <label for="size-l" class="product__size-option">
+                                                L
+                                            </label>
                                         </div>
-                                        <p class="login-board__forget">
-                                            Quên mật khẩu bấm <a href="controlerForget">vào đây</a>
-                                        </p>
+                                    </div>
+                                    <div class="product__wrap-info">
+                                        <div class="info-up">
+                                            <p class="info-up__brand">EGO WEAR</p>
+                                            <p class="info-up__name">Đầm cotton cổ cao</p>
+                                        </div>
+                                        <div class="info-down">
+                                            <div class="info-wrap-down">
+                                                <p class="info-down__price">360.000đ</p>
+                                                <div class="info-down__actions">
+                                                    <span data-id="" title="Thêm vào yêu thích" class="info-down__action-like">
+                                                        <i class="info-down__action-like-icon info-down__action-liked-icon fas fa-heart"></i>
+                                                    </span>
+                                                    <span data-id="" title="Thêm vào giỏ hàng" class="info-down__action-add">
+                                                        <i class="info-down__action-add-icon fas fa-cart-plus"></i>
+                                                    </span>
+                                                    <button data-id="" class="info-down__action-buy">
+                                                        <i class="info-down__action-buy-icon fas fa-shopping-basket"></i>
+                                                        Mua ngay
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col l-4 m-12 c-12">
-                                <div class="login-board__desc">
-                                    <h2 class="login-board__desc-title">Quyền lợi với thành viên</h2>
-                                    <span>Vận chuyển siêu tốc</span>
-                                    <span>Sản phẩm đa dạng</span>
-                                    <span>Đổi trả dễ dàng</span>
-                                    <span>Tích điểm đổi quà</span>
-                                    <span>Được giảm giá cho lần mua tiếp theo lên đến 10%</span>
-                                    <a href="./signup.html" class="login-board__desc-btn">Đăng ký</a>
+                            </div> -->
+                            <!-- <div class="col l-3 m-4 c-6">
+                                <div class="product">
+                                    <div class="product__wrap-img">
+                                        <a href="#" class="product__link">
+                                            <img src="https://tse3.mm.bing.net/th?id=OIP.MEUyeC5TT8xMQUfBUgUmgwHaH3&pid=Api&P=0&w=300&h=300"
+                                                alt="image product" class="product__img">
+                                        </a>
+                                        <div class="product__size">
+                                            <input id="size-m" class="size-m" type="radio" name="size" value="M" hidden>
+                                            <label for="size-m" class="product__size-option">
+                                                M
+                                            </label>
+                                            <input id="size-l" class="size-l" type="radio" name="size" value="L" hidden>
+                                            <label for="size-l" class="product__size-option">
+                                                L
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="product__wrap-info">
+                                        <div class="info-up">
+                                            <p class="info-up__brand">EGO WEAR</p>
+                                            <p class="info-up__name">Đầm cotton cổ cao</p>
+                                        </div>
+                                        <div class="info-down">
+                                            <div class="info-wrap-down">
+                                                <p class="info-down__price">360.000đ</p>
+                                                <div class="info-down__actions">
+                                                    <span data-id="" title="Thêm vào yêu thích" class="info-down__action-like">
+                                                        <i class="info-down__action-like-icon info-down__action-liked-icon fas fa-heart"></i>
+                                                    </span>
+                                                    <span data-id="" title="Thêm vào giỏ hàng" class="info-down__action-add">
+                                                        <i class="info-down__action-add-icon fas fa-cart-plus"></i>
+                                                    </span>
+                                                    <button data-id="" class="info-down__action-buy">
+                                                        <i class="info-down__action-buy-icon fas fa-shopping-basket"></i>
+                                                        Mua ngay
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -260,8 +409,7 @@
                                 <div class="footer-up__introduction-who">
                                     <h3>CHÚNG TÔI LÀ AI?</h3>
                                     <p>Copyright@ 2021 Công ty TNHH thời trang Ego Wear
-                                        Ego Wear đang trong giai đoạn phát triển mạnh với nhiều mặt hàng phong phú giá
-                                        cả
+                                        Ego Wear đang trong giai đoạn phát triển mạnh với nhiều mặt hàng phong phú giá cả
                                         cạnh tranh, mong muốn đem đến chất lượng tốt nhất cho khách hàng.
                                         Địa chỉ: 221 Chùa Bộc, Đống Đa, Hà Nội, Hà Nội
                                         Điện thoại: 1900 6750 - Email: support@sapo.vn
@@ -270,20 +418,16 @@
                                 <div class="footer-up__introduction-community">
                                     <h3>MẠNG XÃ HỘI</h3>
                                     <div class="footer-up__introduction-community-wrap-icon">
-                                        <a style="--main-color:var(--blue)" href="#"
-                                            class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:var(--blue)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-facebook-f footer-iconfacebook "></i>
                                         </a>
-                                        <a style="--main-color:aqua" href="#"
-                                            class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:aqua" href="#" class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-instagram footer-iconinstagram"></i>
                                         </a>
-                                        <a style="--main-color:var(--orange)" href="#"
-                                            class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:var(--orange)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-google footer-icongoole"></i>
                                         </a>
-                                        <a style="--main-color:var(--red)" href="#"
-                                            class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:var(--red)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-youtube footer-iconyoutube"></i>
                                         </a>
                                     </div>
@@ -351,22 +495,8 @@
                 </div>
             </div>
         </footer>
-        <script src="./assets/js/login.js"></script>
-        <script src="./assets/js/validator.js"></script>
-        <script>
-            Validator({
-                form: '.login-board__form',
-                formGroupSelector: '.form-group',
-                errorSelector: '.form-message',
-                rules: [
-                    Validator.isRequired('#email', 'Vui lòng nhập trường này'),
-                    Validator.isEmail('#email', 'Email không hợp lệ'),
-                    Validator.isRequired('#password', 'Vui lòng nhập trường này'),
-                    Validator.minlength('#password', 6)
-                ]
-            })
-        </script>
     </div>
+    <script src="./assets/js/enjoy.js"></script>
 </body>
 
 </html>
