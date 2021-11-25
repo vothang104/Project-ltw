@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Cart</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <div class="row header-up">
+                    <div class="col l-3 m-2 c-0">
+                        <a href="./index.html" class="header-up__logo hide-on-mobile">
+                            <img src="//bizweb.dktcdn.net/100/434/926/themes/832778/assets/logo.png?1631675028757"
+                                alt="logo">
+                        </a>
+                    </div>
+                    <div class="col l-6 m-5 c-6">
+                        <div class="header-up__search">
+                            <div class="menu-mobile show-on-mobile">
+                                <label for="check-menu"><i class="menu-mobile__icon fas fa-bars"></i></label>
+                                <input id="check-menu" type="checkbox" hidden>
+                                <label for="check-menu" class="menu-mobile__modal"></label>
+                                <ul class="menu-mobile__board">
+                                    <li class="menu-mobile__item">
+                                        <i class="menu-mobile__item-iconuser fas fa-user"></i>
+                                        <span class="menu-mobile__item-nameuser">khách hàng</span>
+                                        <div class="menu-mobile__item-close">
+                                            <label for="check-menu">
+                                                <i class="fas fa-times"></i>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="menu-mobile__item">
+                                        <i class="fas fa-home"></i>
+                                        <a href="#"><label for="check-menu">Trang chủ</label></a>
+                                    </li>
+                                    <li class="menu-mobile__item">
+                                        <i class="fas fa-tshirt"></i>
+                                        <a href="#"><label for="check-menu">Sản phẩm</label></a>
+                                    </li>
+                                    <li class="menu-mobile__item">
+                                        <i class="fas fa-question-circle"></i>
+                                        <a href="#"><label for="check-menu">Câu hỏi</label></a>
+                                    </li>
+                                    <li class="menu-mobile__item">
+                                        <i class="fas fa-newspaper"></i>
+                                        <a href="#"><label for="check-menu">Tin tức</label></a>
+                                    </li>
+                                    <li class="menu-mobile__item">
+                                        <i class="fas fa-file-signature"></i>
+                                        <a href="#"><label for="check-menu">Liên hệ</label></a>
+                                    </li>
+                                    <!-- <li class="menu-mobile__item">
+                                            <a href="#"><label for="check-menu">Đăng xuất</label></a>
+                                        </li> -->
+                                </ul>
+                            </div>
+                            <div class=" header-up__search-input">
+                                <form action="" method="post">
+                                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                            <div class="header-up__search-tuvan hide-on-taplet">
+                                <div class="wrap-icon">
+                                    <i class="header-up__search-tuvan-icon fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="header-up__search-tuvan-sdt">
+                                    <p>Tư vấn hỗ trợ</p>
+                                    <p>1900 6750</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-5 c-6">
+                        <div class="header-up__options">
+                            <div class="header-up__options-login">
+                                <i class="fas fa-user"></i>
+                                <a href="./login.html">Đăng nhập</a>
+                                <!-- <a href="">vothang</a>
+                                <ul class="header-up__options-login__list">
+                                    <li class="header-up__options-login__item">
+                                        <a class="header-up__options-login__link" href="">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="header-up__options-login__item">
+                                        <a class="header-up__options-login__link" href="">Đăng xuất</a>
+                                    </li>
+                                </ul> -->
+                            </div>
+                            <div class="header-up__options-enjoy">
+                                <i class="fas fa-heart"></i>
+                                <a href="./enjoy.html">Yêu thích</a>
+                                <span>0</span>
+                            </div>
+                            <div class="header-up__options-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <a href="./cart.html">Giỏ hàng</a>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="hide-on-mobile header-down">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="header-down__wrap-link">
+                            <a href="./index.html" class="header-down__link">Trang chủ</a>
+                        </div>
+                        <div class="header-down__wrap-link">
+                            <a href="" class="header-down__link">Sản phẩm</a>
+                            <i class="header-down__icon fas fa-caret-down"></i>
+                            <ul class="header-down__list-product">
+                                <li class="header-down__product">
+                                    Áo nam <i class="header-down__product-icon fas fa-caret-right"></i>
+                                    <ul class="header-down__product-list">
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Sơ mi nam</a>
+                                        </li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Áo thun
+                                                nam</a></li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Polo nam</a>
+                                        </li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Áo khoác
+                                                nam</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-down__product">
+                                    Áo nữ <i class="header-down__product-icon fas fa-caret-right"></i>
+                                    <ul class="header-down__product-list">
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Sơ mi nữ</a>
+                                        </li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Áo thun nữ</a>
+                                        </li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Polo nữ</a>
+                                        </li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Áo khoác
+                                                nữ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-down__product">
+                                    Quần nam <i class="header-down__product-icon fas fa-caret-right"></i>
+                                    <ul class="header-down__product-list">
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quần jean
+                                                nam</a> </li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quần kaki
+                                                nam</a></li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quân jogger
+                                                nam</a></li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quần short
+                                                nam</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-down__product">
+                                    Quần nữ <i class="header-down__product-icon fas fa-caret-right"></i>
+                                    <ul class="header-down__product-list">
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quần jean
+                                                nữ</a> </li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quần kaki
+                                                nữ</a></li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quân xuông
+                                                nữ</a></li>
+                                        <li class="header-down__product-item"><a href="./allproduct.html">Quần short
+                                                nữ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-down__wrap-link">
+                            <a href="#" class="header-down__link">Tin tức</a>
+                            <i class="header-down__icon fas fa-caret-down"></i>
+                            <ul class="header-down__list-product header-down__list-news">
+                                <li class="header-down__product header-down__news">Tin xu hướng</li>
+                                <li class="header-down__product header-down__news">Tin mẹo vặt</li>
+                                <li class="header-down__product header-down__news">Tin khuyến mãi</li>
+                                <li class="header-down__product header-down__news">Thẻ quà tặng</li>
+                            </ul>
+                        </div>
+                        <div class="header-down__wrap-link">
+                            <a href="#" class="header-down__link">Câu hỏi</a>
+                        </div>
+                        <div class="header-down__wrap-link">
+                            <a href="#" class="header-down__link">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content-cart">
+            <div class="grid wide">
+                <div class="cart-direct">
+                    <span>Trang chủ</span> / <span>Giỏ hàng</span>
+                </div>
+                <h2 class="cart-title">GIỎ HÀNG CỦA BẠN</h2>
+                <div class="cart-product">
+                    <div class="cart-product__none">
+                        <i class="cart-product__none-icon fas fa-shopping-bag"></i>
+                        <p class="cart-product__none-text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                    </div>
+                    <div class="cart-product__has">
+                        <div class="cart-product__table-head">
+                            <div class="cart-product__table-head__info">Thông tin sản phẩm</div>
+                            <div class="cart-product__table-head__details">
+                                <span>Đơn giá</span>
+                                <span>Số lượng</span>
+                                <span>Thành tiền</span>
+                            </div>
+                        </div>
+                        <div data-id="1" class="cart-product__table-body">
+                            <div class="cart-product__table-info-product">
+                                <div class="cart-product__table-info-product__img">
+                                    <img src="https://tse2.mm.bing.net/th?id=OIP.vc5yadKye0v27xWU9lFExAHaKX&pid=Api&P=0&w=300&h=300" alt="image product">
+                                </div>
+                                <div class="cart-product__table-info-product__info">
+                                    <span>Áo phông cộc tay</span>
+                                    <span>S / vàng</span>
+                                    <span class="btn-remove-enjoyproduct" data-id="1">xóa</span>
+                                </div>
+                            </div>
+                            <div class="cart-product__table-details-product">
+                                <span data-id="1" class="cart-product__table-details-product__price">360000</span>
+                                <div class="cart-product__table-details-product__quantity">
+                                    <span data-id="1" class="minus">-</span>
+                                    <span data-id="1" class="number">1</span>
+                                    <span data-id="1" class="plus">+</span>
+                                </div>
+                                <span data-id="1" class="cart-product__table-details-product__total">360000</span>
+                            </div>
+                        </div>
+                        <div data-id="2" class="cart-product__table-body">
+                            <div class="cart-product__table-info-product">
+                                <div class="cart-product__table-info-product__img">
+                                    <img src="https://tse2.mm.bing.net/th?id=OIP.vc5yadKye0v27xWU9lFExAHaKX&pid=Api&P=0&w=300&h=300" alt="image product">
+                                </div>
+                                <div class="cart-product__table-info-product__info">
+                                    <span>Áo phông cộc tay</span>
+                                    <span>S / vàng</span>
+                                    <span class="btn-remove-enjoyproduct" data-id="2">xóa</span>
+                                </div>
+                            </div>
+                            <div class="cart-product__table-details-product">
+                                <span data-id="2" class="cart-product__table-details-product__price">360000</span>
+                                <div class="cart-product__table-details-product__quantity">
+                                    <span data-id="2" class="minus">-</span>
+                                    <span data-id="2" class="number">1</span>
+                                    <span data-id="2" class="plus">+</span>
+                                </div>
+                                <span data-id="2" class="cart-product__table-details-product__total">360000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-product__pay">
+                        <span class="cart-product__pay-total">Tổng tiền: <span>720000</span></span>
+                        <a href="#" class="btn cart-product__pay-btn-pay">Thanh toán</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer-up">
+                    <div class="row footer-up-wrap">
+                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                            <div class="footer-up__introduction">
+                                <div class="footer-up__introduction-who">
+                                    <h3>CHÚNG TÔI LÀ AI?</h3>
+                                    <p>Copyright@ 2021 Công ty TNHH thời trang Ego Wear Ego Wear đang trong giai đoạn phát triển mạnh với nhiều mặt hàng phong phú giá cả cạnh tranh, mong muốn đem đến chất lượng tốt nhất cho khách hàng. Địa chỉ: 221 Chùa
+                                        Bộc, Đống Đa, Hà Nội, Hà Nội Điện thoại: 1900 6750 - Email: support@sapo.vn
+                                    </p>
+                                </div>
+                                <div class="footer-up__introduction-community">
+                                    <h3>MẠNG XÃ HỘI</h3>
+                                    <div class="footer-up__introduction-community-wrap-icon">
+                                        <a style="--main-color:var(--blue)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                            <i class="fab fa-facebook-f footer-iconfacebook "></i>
+                                        </a>
+                                        <a style="--main-color:aqua" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                            <i class="fab fa-instagram footer-iconinstagram"></i>
+                                        </a>
+                                        <a style="--main-color:var(--orange)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                            <i class="fab fa-google footer-icongoole"></i>
+                                        </a>
+                                        <a style="--main-color:var(--red)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                            <i class="fab fa-youtube footer-iconyoutube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                            <div class="footer-up__privacy">
+                                <h3>CHÍNH SÁCH</h3>
+                                <ul class="footer-up__privacy-list">
+                                    <li class="footer-up__privacy-item"><a href="#">Trang chủ</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Sản phẩm</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Xu hướng</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Trang phục</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Phụ kiện</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Tin tức</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Câu hỏi</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                            <div class="footer-up__khu">
+                                <h3>KHU BÁN HÀNG</h3>
+                                <ul class="footer-up__khu-list">
+                                    <li class="footer-up__khu-item"><a href="#">Trang chủ</a></li>
+                                    <li class="footer-up__khu-item"><a href="#">Sản phẩm</a></li>
+                                    <li class="footer-up__khu-item"><a href="#">Xu hướng</a></li>
+                                    <li class="footer-up__khu-item"><a href="#">Trang phục</a></li>
+                                    <li class="footer-up__khu-item"><a href="#">Phụ kiện</a></li>
+                                    <li class="footer-up__khu-item"><a href="#">Tin tức</a></li>
+                                    <li class="footer-up__khu-item"><a href="#">Câu hỏi</a></li>
+                                    <li class="footer-up__khu-item"><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                            <div class="footer-up__support">
+                                <h3>HỖ TRỢ CHUNG</h3>
+                                <ul class="footer-up__support-list">
+                                    <li class="footer-up__support-item"><a href="#">Trang chủ</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Sản phẩm</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Xu hướng</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Trang phục</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Phụ kiện</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Tin tức</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Câu hỏi</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-down">
+                    <div class="footer-down__left">
+                        Bản quyền thuộc về <a href="#">Ego Creative</a> cung cấp bởi <a href="#">sapo</a>
+                    </div>
+                    <ul class="footer-down__list hide-on-mobile hide-on-taplet">
+                        <li class="footer-down__list-item"><a href="#">Trang chủ</a></li>
+                        <li class="footer-down__list-item"><a href="#">Sản phẩm</a></li>
+                        <li class="footer-down__list-item"><a href="#">Xu hướng</a></li>
+                        <li class="footer-down__list-item"><a href="#">Trang phục</a></li>
+                        <li class="footer-down__list-item"><a href="#">Phụ kiện</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
