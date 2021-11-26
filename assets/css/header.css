@@ -543,3 +543,9 @@ i.menu-mobile__item-iconuser {
 .header-down__list-news {
     width: 150px;
 }
+.header-down__news-link {
+    color: var(--gray-dark);
+}
+.header-down__news-link:hover {
+    color: var(--orange);
+}
