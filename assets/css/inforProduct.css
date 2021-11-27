@@ -30,12 +30,13 @@
     font-weight: 600;
     color: white;
 }
-.infor-product__help--title-1 {
-    background-color: var(--orange);
-}
-.infor-product__help--title-2 {
+
+.infor-product__help--title {
     background-color: var(--gray-dark);
 }
+.active {
+    background-color: var(--orange);
+  }
 .infor-product__help--text {
     border: 1px solid var(--secondary);
 }
