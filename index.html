@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/mainProduct.css">
+    <link rel="stylesheet" href="assets/css/inforProduct.css">
+    <link rel="stylesheet" href="assets/css/pay.css">
     <title>EGO.WEAR</title>
 </head>
 <body>
@@ -14,7 +20,589 @@
 
         </header>
         <div class="container">
-
+            <div class="grid wide">
+                <!-- slider -->
+                <div class="slideshow-container">
+            
+                    <div class="mySlides fade">
+                      <img src="./image/slider_1.webp" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./image/slider_2-2-2-2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./image/slider_4-4.png" style="width:100%">
+                    </div>
+                    
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                    </div>        
+                    <div class="dot-box" style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                <!-- services -->
+                <div class="services">
+                    <div class="services__container">
+                        <div class="list__services">
+                            <div class="list__services--icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="list__services--content">
+                                <div class="services__content">
+                                    <h2 class="services__content--title">Miễn phí giao hàng</h2>
+                                    <p class="services__content--content">Miễn phí ship với đơn hàng > 498K</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list__services">
+                            <div class="list__services--icon">
+                                <i class="fas fa-money-check-alt"></i>
+                            </div>
+                            <div class="list__services--content">
+                                <div class="services__content">
+                                    <h2 class="services__content--title">Thanh toán COD</h2>
+                                    <p class="services__content--content">Thanh toán khi nhận hàng (COD)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list__services">
+                            <div class="list__services--icon">
+                                <i class="far fa-gem"></i>
+                            </div>
+                            <div class="list__services--content">
+                                <div class="services__content">
+                                    <h2 class="services__content--title">Khách hàng VIP</h2>
+                                    <p class="services__content--content">Ưu đãi dành cho khách hàng VIP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list__services">
+                            <div class="list__services--icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="list__services--content">
+                                <div class="services__content">
+                                    <h2 class="services__content--title">Hỗ trợ bảo hành</h2>
+                                    <p class="services__content--content">Đổi, sửa đồ tại tất cả store</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sản phẩm mới -->
+                <div class="product-new">
+                    <div class="product-new-container">
+                        <div class="product-new-container-title">
+                            <a href="newProduct.html" class="product-new-container-title--link">
+                                MẪU MỚI VỀ
+                            </a>
+                        </div>
+                        <div class="product-new-container__product">
+                            <div class="row">
+                                <div class="col l-3 m-4 c-6 only">
+                                    <a class="linkimage" href="inforProduct.html">
+                                        <div class="product-new-container__product-image" style="background-image:url(./image/polo-cam-1.webp)" ;>
+                                            <div class="product-new-container__product-sale">
+                                                <span class="product-new-container__product-sale-lable"> Giảm</span>
+                                                <span class="product-new-container__product-sale-percen">14%</span>
+                                            </div>
+                                            <div class="product-new-container__product-sample">
+                                                <div class="product-new-container__product-color">
+                                                    <div class="select-color">
+                                                        <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="yellow" checked="checked" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-yellow"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="blue" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-blue"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="white"  name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-white"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="product__size">
+                                                    <input id="size-m" class="size-m" type="radio" name="size" value="M" hidden>
+                                                    <label for="size-m" class="product__size-option">
+                                                        M
+                                                    </label>
+                                                    <input id="size-l" class="size-l" type="radio" name="size" value="L" hidden>
+                                                    <label for="size-l" class="product__size-option">
+                                                        L
+                                                    </label>
+                                                    <input id="size-xl" class="size-xl" type="radio" name="size" value="XL" hidden>
+                                                    <label for="size-xl" class="product__size-option">
+                                                        XL
+                                                    </label>
+                                                    <input id="size-xxl" class="size-xxl" type="radio" name="size" value="XXL" hidden>
+                                                    <label for="size-xxl" class="product__size-option">
+                                                        XXL
+                                                    </label>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-new-container__product-box">
+                                        <div class="product-new-container__product-infor">
+                                            <div class="product-new-container__product-shop-name">
+                                                EGO WEAR
+                                            </div>
+                                            <div class="product-new-container__product-product-name">
+                                                ÁO POLO PHỐI KHÓA CỔ
+                                            </div>
+                                        </div>
+                                        <div class="product-new-container__product-price">
+                                            <span class="product-new-container__product-price-sale">399.000đ</span>
+                                            <span class="product-new-container__product-price-old">
+                                                <del>460.000đ</del>
+                                            </span>
+                                        </div>
+                                        <div class="product-new-container__product-action-cart">
+                                            <span class="action-cart-like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <span class="action-cart-add">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                            <span class="action-cart-buy">
+                                                <div class="action-cart-buy-box">
+                                                    <a href="./pay.html">
+                                                        <span class="action-cart-buy-box-icon">
+                                                            <i class="fas fa-shopping-bag"></i>
+                                                        </span>
+                                                        <span class="action-cart-buy-box-text"> 
+                                                            Mua ngay 
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </span>
+                                        </div>   
+                                    </div>
+            
+                                </div>   
+                                <div class="col l-3 m-4 c-6 only">
+                                    <a class="linkimage" href="inforProduct.html">
+                                        <div class="product-new-container__product-image" style="background-image:url(./image/pc-ao-dam-2019.jpg)" ;>
+                                            <div class="product-new-container__product-sale">
+                                                <span class="product-new-container__product-sale-lable"> Giảm</span>
+                                                <span class="product-new-container__product-sale-percen">35%</span>
+                                            </div>
+                                            <div class="product-new-container__product-sample">
+                                                <div class="product-new-container__product-color">
+                                                    <div class="select-color">
+                                                        <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="yellow" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-yellow"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="blue" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-blue"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="white" checked="checked" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-white"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="product__size">
+                                                    <input id="size-m" class="size-m" type="radio" name="size" value="M" hidden>
+                                                    <label for="size-m" class="product__size-option">
+                                                        M
+                                                    </label>
+                                                    <input id="size-l" class="size-l" type="radio" name="size" value="L" hidden>
+                                                    <label for="size-l" class="product__size-option">
+                                                        L
+                                                    </label>
+                                                    <input id="size-xl" class="size-xl" type="radio" name="size" value="XL" hidden>
+                                                    <label for="size-xl" class="product__size-option">
+                                                        XL
+                                                    </label>
+                                                    <input id="size-xxl" class="size-xxl" type="radio" name="size" value="XXL" hidden>
+                                                    <label for="size-xxl" class="product__size-option">
+                                                        XXL
+                                                    </label>
+                                                </div>     -->
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-new-container__product-box">
+                                        <div class="product-new-container__product-infor">
+                                            <div class="product-new-container__product-shop-name">
+                                                EGO WEAR
+                                            </div>
+                                            <div class="product-new-container__product-product-name">
+                                                ĐẦM COTTON CAO CẤP
+                                            </div>
+                                        </div>
+                                        <div class="product-new-container__product-price">
+                                            <span class="product-new-container__product-price-sale">360.000đ</span>
+                                            <span class="product-new-container__product-price-old">
+                                                <del>550.000đ</del>
+                                            </span>
+                                        </div>
+                                        <div class="product-new-container__product-action-cart">
+                                            <span class="action-cart-like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <span class="action-cart-add">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                            <span class="action-cart-buy">
+                                                <div class="action-cart-buy-box">
+                                                    <span class="action-cart-buy-box-icon">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                    </span>
+                                                    <span class="action-cart-buy-box-text"> Mua ngay </span>
+                                                </div>
+                                            </span>
+                                        </div>   
+                                    </div>
+            
+                                </div>
+                                <div class="col l-3 m-4 c-6 only">
+                                    <a class="linkimage" href="inforProduct.html">
+                                        <div class="product-new-container__product-image" style="background-image:url(./image/phong-vang-1.jpg)" ;>
+                                            <div class="product-new-container__product-sale">
+                                                <span class="product-new-container__product-sale-lable"> Giảm</span>
+                                                <span class="product-new-container__product-sale-percen">22%</span>
+                                            </div>
+                                            <div class="product-new-container__product-sample">
+                                                <div class="product-new-container__product-color">
+                                                    <div class="select-color">
+                                                        <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="yellow" checked="checked" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-yellow"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="blue" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-blue"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="white" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-white"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="product__size">
+                                                    <input id="size-m" class="size-m" type="radio" name="size" value="M" hidden>
+                                                    <label for="size-m" class="product__size-option">
+                                                        M
+                                                    </label>
+                                                    <input id="size-l" class="size-l" type="radio" name="size" value="L" hidden>
+                                                    <label for="size-l" class="product__size-option">
+                                                        L
+                                                    </label>
+                                                    <input id="size-xl" class="size-xl" type="radio" name="size" value="XL" hidden>
+                                                    <label for="size-xl" class="product__size-option">
+                                                        XL
+                                                    </label>
+                                                    <input id="size-xxl" class="size-xxl" type="radio" name="size" value="XXL" hidden>
+                                                    <label for="size-xxl" class="product__size-option">
+                                                        XXL
+                                                    </label>
+                                                    
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-new-container__product-box">
+                                        <div class="product-new-container__product-infor">
+                                            <div class="product-new-container__product-shop-name">
+                                                EGO WEAR
+                                            </div>
+                                            <div class="product-new-container__product-product-name">
+                                                ÁO PHÔNG CỘC TAY
+                                            </div>
+                                        </div>
+                                        <div class="product-new-container__product-price">
+                                            <span class="product-new-container__product-price-sale">360.000đ</span>
+                                            <span class="product-new-container__product-price-old">
+                                                <del>460.000đ</del>
+                                            </span>
+                                        </div>
+                                        <div class="product-new-container__product-action-cart">
+                                            <span class="action-cart-like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <span class="action-cart-add">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                            <span class="action-cart-buy">
+                                                <div class="action-cart-buy-box">
+                                                    <span class="action-cart-buy-box-icon">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                    </span>
+                                                    <span class="action-cart-buy-box-text"> Mua ngay </span>
+                                                </div>
+                                            </span>
+                                        </div>   
+                                    </div>
+            
+                                </div> 
+                                <div class="col l-3 m-4 c-6 only">
+                                    <a class="linkimage" href="inforProduct.html">
+                                        <div class="product-new-container__product-image" style="background-image:url(./image/pc-ao-so-mi-nu.webp" ;>
+                                            <!-- <div class="product-new-container__product-sale">
+                                                <span class="product-new-container__product-sale-lable"> Giảm</span>
+                                                <span class="product-new-container__product-sale-percen">14%</span>
+                                            </div> -->
+                                            <div class="product-new-container__product-sample">
+                                                <div class="product-new-container__product-color">
+                                                    <div class="select-color">
+                                                        <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="yellow" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-yellow"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="blue" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-blue"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="white" checked="checked" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-white"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="product__size">
+                                                    <input id="size-m" class="size-m" type="radio" name="size" value="M" hidden>
+                                                    <label for="size-m" class="product__size-option">
+                                                        M
+                                                    </label>
+                                                    <input id="size-l" class="size-l" type="radio" name="size" value="L" hidden>
+                                                    <label for="size-l" class="product__size-option">
+                                                        L
+                                                    </label>
+                                                    <!-- <input id="size-xl" class="size-xl" type="radio" name="size" value="XL" hidden>
+                                                    <label for="size-xl" class="product__size-option">
+                                                        XL
+                                                    </label>
+                                                    <input id="size-xxl" class="size-xxl" type="radio" name="size" value="XXL" hidden>
+                                                    <label for="size-xxl" class="product__size-option">
+                                                        XXL
+                                                    </label> -->
+                                                    
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-new-container__product-box">
+                                        <div class="product-new-container__product-infor">
+                                            <div class="product-new-container__product-shop-name">
+                                                EGO WEAR
+                                            </div>
+                                            <div class="product-new-container__product-product-name">
+                                                ÁO SƠ MI NỮ
+                                            </div>
+                                        </div>
+                                        <div class="product-new-container__product-price">
+                                            <span class="product-new-container__product-price-sale">180.000đ</span>
+                                            <!-- <span class="product-new-container__product-price-old">
+                                                <del>320.000đ</del>
+                                            </span> -->
+                                        </div>
+                                        <div class="product-new-container__product-action-cart">
+                                            <span class="action-cart-like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <span class="action-cart-add">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                            <span class="action-cart-buy">
+                                                <div class="action-cart-buy-box">
+                                                    <span class="action-cart-buy-box-icon">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                    </span>
+                                                    <span class="action-cart-buy-box-text"> Mua ngay </span>
+                                                </div>
+                                            </span>
+                                        </div>   
+                                    </div>
+            
+                                </div>
+                                <div class="col l-3 m-4 c-6 only">
+                                    <a class="linkimage" href="inforProduct.html">
+                                        <div class="product-new-container__product-image" style="background-image:url(./image/pc-ao-thun-unisex.jpg" ;>
+                                            <!-- <div class="product-new-container__product-sale">
+                                                <span class="product-new-container__product-sale-lable"> Giảm</span>
+                                                <span class="product-new-container__product-sale-percen">14%</span>
+                                            </div> -->
+                                            <div class="product-new-container__product-sample">
+                                                <div class="product-new-container__product-color">
+                                                    <div class="select-color">
+                                                        <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="yellow" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-yellow"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="blue" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-blue"></span>
+                                                          </label>
+                                                          <label class="radio-select-color radio-select-color--main ">
+                                                            <input type="radio" value="white" checked="checked" name="radio">
+                                                            <span class="checkmark checkmark--main checkmark-white"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="product__size">
+                                                    <input id="size-m" class="size-m" type="radio" name="size" value="M" hidden>
+                                                    <label for="size-m" class="product__size-option">
+                                                        M
+                                                    </label>
+                                                    <input id="size-l" class="size-l" type="radio" name="size" value="L" hidden>
+                                                    <label for="size-l" class="product__size-option">
+                                                        L
+                                                    </label>
+                                                    <input id="size-xl" class="size-xl" type="radio" name="size" value="XL" hidden>
+                                                    <label for="size-xl" class="product__size-option">
+                                                        XL
+                                                    </label>
+                                                    <input id="size-xxl" class="size-xxl" type="radio" name="size" value="XXL" hidden>
+                                                    <label for="size-xxl" class="product__size-option">
+                                                        XXL
+                                                    </label>
+                                                </div>     -->
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="product-new-container__product-box">
+                                        <div class="product-new-container__product-infor">
+                                            <div class="product-new-container__product-shop-name">
+                                                EGO WEAR
+                                            </div>
+                                            <div class="product-new-container__product-product-name">
+                                                ÁO THUN UNISEX
+                                            </div>
+                                        </div>
+                                        <div class="product-new-container__product-price">
+                                            <span class="product-new-container__product-price-sale">120.000đ</span>
+                                            <!-- <span class="product-new-container__product-price-old">
+                                                <del>320.000đ</del>
+                                            </span> -->
+                                        </div>
+                                        <div class="product-new-container__product-action-cart">
+                                            <span class="action-cart-like">
+                                                <i class="far fa-heart"></i>
+                                            </span>
+                                            <span class="action-cart-add">
+                                                <i class="fas fa-shopping-bag"></i>
+                                            </span>
+                                            <span class="action-cart-buy">
+                                                <div class="action-cart-buy-box">
+                                                    <span class="action-cart-buy-box-icon">
+                                                        <i class="fas fa-shopping-bag"></i>
+                                                    </span>
+                                                    <span class="action-cart-buy-box-text"> Mua ngay </span>
+                                                </div>
+                                            </span>
+                                        </div>   
+                                    </div>
+            
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- banner -->
+                <div class="banner">
+                    <div class="banner__container">
+                        <div class="banner__container-column">
+                            <div class="banner__container-column-left">
+                                <img class="banner banner1" src="./image/banner1.webp" alt="">
+                                <div class="banner__bar-effect1">
+                                    <div class="banner--effect1">   
+                                    </div>
+                                </div>
+                                <div class="banner__bar-effect2">
+                                    <div class="banner--effect2">  
+                                    </div>
+                                </div>
+                                <div class="banner__bar-effect3">
+                                    <div class="banner--effect3">  
+                                    </div>
+                                </div>
+                                <div class="banner__bar-effect4">
+                                    <div class="banner--effect4">  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner__container-column ">
+                            <div class="banner__container-column-right">
+                                <div class="banner__container-row-over">
+                                    <div class="banner__container-row banner__container-row-right">
+                                        <div class="banner__container-row-column">
+                                            <img class="banner banner2" src="./image/banner2.webp" alt="">
+                                            <div class="banner__bar-effect1">
+                                                <div class="banner--effect1">   
+                                                </div>
+                                            </div>
+                                            <div class="banner__bar-effect2">
+                                                <div class="banner--effect2">  
+                                                </div>
+                                            </div>
+                                            <div class="banner__bar-effect3">
+                                                <div class="banner--effect3">  
+                                                </div>
+                                            </div>
+                                            <div class="banner__bar-effect4">
+                                                <div class="banner--effect4">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="banner__container-row-column">
+                                            <img class="banner banner3" src="./image/banner3.webp" alt="">
+                                            <div class="banner__bar-effect1">
+                                                <div class="banner--effect1">   
+                                                </div>
+                                            </div>
+                                            <div class="banner__bar-effect2">
+                                                <div class="banner--effect2">  
+                                                </div>
+                                            </div>
+                                            <div class="banner__bar-effect3">
+                                                <div class="banner--effect3">  
+                                                </div>
+                                            </div>
+                                            <div class="banner__bar-effect4">
+                                                <div class="banner--effect4">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="banner__container-row-under">
+                                    <img class="banner banner4" src="./image/banner4.webp" alt="">
+                                    <div class="banner__bar-effect1">
+                                        <div class="banner--effect1">   
+                                        </div>
+                                    </div>
+                                    <div class="banner__bar-effect2">
+                                        <div class="banner--effect2">  
+                                        </div>
+                                    </div>
+                                    <div class="banner__bar-effect3">
+                                        <div class="banner--effect3">  
+                                        </div>
+                                    </div>
+                                    <div class="banner__bar-effect4">
+                                        <div class="banner--effect4">  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./assets/js/slider.js">
+            </script>
         </div>
         <footer class="footer">
 
