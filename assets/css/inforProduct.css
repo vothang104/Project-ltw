@@ -34,7 +34,7 @@
 .infor-product__help--title {
     background-color: var(--gray-dark);
 }
-.active {
+.active1 {
     background-color: var(--orange);
   }
 .infor-product__help--text {
