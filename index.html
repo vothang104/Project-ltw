@@ -17,7 +17,265 @@
 
         </header>
         <div class="container">
+            <div class="small-container">
+                <h2 class="title">SALE ĐỒNG GIÁ
+                    <p id="demo"></p>
+                </h2>
 
+
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Dec 10, 2021 20:37:25").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Output the result in an element with id="demo"
+                        document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                            minutes + "m " + seconds + "s ";
+
+                        // If the count down is over, write some text 
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>
+                <div class="row">
+                    <div class="col-5">
+                        <img src="image/vay1.jpg" alt="">
+                        <h2>EGO WEAR</h2>
+                        <h4>ÁO POLO PHỐI KHÓA CỔ</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>399.000<u>đ</u>&emsp; <del style="color:black;">460.000<u>đ</u></del></p>
+                    </div>
+                    <p id="burst-12">Giam 35</p>
+                    <div class="col-5">
+                        <img src="image/vay2.jpg" alt="">
+                        <h2>EGO WEAR</h2>
+                        <h4>ĐẦM COTTON CAO CẤP</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>360.000<u>đ</u>&emsp; <del style="color:black;">550.000<u>đ</u></del</p>
+                    </div>
+                    <p id="burst-12"></p>          
+                    <div class="col-5">
+                        <img src="image/vay3.jpg" alt="">
+                        <h2>EGO WEAR</h2>
+                        <h4>ÁO PHÔNG CỘC TAY</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p>360.000<u>đ</u>&emsp; <del style="color:black;">460.000<u>đ</u></del</p>
+                    </div>
+                    <p id="burst-12"></p>
+                    <div class="col-5">
+                        <img src="image/vay4.jpg" alt="">
+                        <h2>EGO WEAR</h2>
+                        <h4>ÁO SƠ MI NGẮN TAY</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>180.000<u>đ</u></p>
+                    </div>
+                    <div class="col-5">
+                        <img src="image/vay5.jpg" alt="">
+                        <h2>EGO WEAR</h2>
+                        <h4>ÁO THUN UNISEX</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>120.000<u>đ</u></p>
+                    </div>        
+                </div>
+            </div>
+            <div class="row-outer">
+                <div class="container-row">
+                    <div class="animated-heading">
+                        <h1><span id="words">Tuần lễ sẵn SALE mùa dịch, giảm giá kịch sàn toàn bộ sản phẩm</span></h1>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                (function() {
+                    var words = [
+                        "Tuần lễ sẵn SALE mùa dịch, giảm giá kịch sàn toàn bộ sản phẩm",
+                        "HOT: Sale 50% cho toàn bộ đơn hàng có giá trị từ 2 triệu, miễn phí ship toàn quốc",
+                        "Thông báo: Tình hình dịch Covid-19 Ego Wear chỉ nhận đặt hàng online không tới cửa hàng từ ngày 8/7"
+                    ],
+                    i = 0;
+                    setInterval(function() {
+                        $('#words').fadeOut(function() {
+                            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+                        });
+                    }, 2000)               
+                })();  
+            </script>
+            <video width="500" height="500" controls>
+                <source src="video/lookbook.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2 id="top-sale">TOP BÁN CHẠY</h2>
+            <div class="row">
+                
+                <div class="col-3">
+                    <img src="image/vay1.jpg" alt="">
+                    <h2>EGO WEAR</h2>
+                    <h4>ÁO POLO PHỐI KHÓA CỔ</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>399.000<u>đ</u>&emsp; <del style="color:black;">460.000<u>đ</u></del></p>
+                    </div>
+                    <div class="col-3">
+                        <img src="image/vay2.jpg" alt="">
+                        <h2>EGO WEAR</h2>
+                        <h4>ĐẦM COTTON CAO CẤP</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <p>360.000<u>đ</u>&emsp; <del style="color:black;">550.000<u>đ</u></del</p>
+                </div>
+                <div class="col-3">
+                    <img src="image/vay3.jpg" alt="">
+                    <h2>EGO WEAR</h2>
+                    <h4>ÁO PHÔNG CỘC TAY</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>360.000<u>đ</u>&emsp; <del style="color:black;">460.000<u>đ</u></del</p>
+                </div>
+            </div>
+        
+            <div class="keyword">
+                <div class="title-keyword">
+                    <h2>TỪ KHÓA HOT</h2>
+                    <div class="key">
+                        <span><a href="">Chân váy</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Áo sơ mi</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Áo đôi</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Đầm cao cấp</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Áo vest</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Váy body</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Phụ kiện mới</a></span>
+                    </div>          
+                    <div class="key">
+                        <span><a href="">Áo ba lỗ</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Áo khoác da</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Áo chống nắng</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Áo thun</a></span>
+                    </div>
+                    <div class="key">
+                        <span><a href="">Áo Croptop</a></span>
+                    </div>
+                                      
+                </div>
+            </div>
+            <div class="container-new">
+                <header>
+                <h1 class="heading-1">TIN TỨC MỚI NHẤT</h1>   
+                </header>
+            
+                <div class="main">
+                    <div class="home">
+                        <div class="left">
+                            <img src="image/vay6.jpg" class="home-img" alt="Paper photo">  
+                            <p class="heading-2">
+                                15/08/2021 - bởi: Ego Creative
+                            </p>
+                            <h3><a href="">Mẫu Tây Andrea chuộng váy ngủ xuyên thấu</a></h3>
+                            <p class="content">Andrea Aybar là người mẫu gốc Tây Ba Nha. Nhưng từ khi còn rất nhỏ, cô đã cùng gia đình chuyển tới Việt Nam sinh sống và làm việc. Vì thế, Việt Nam được coi như là quê hương thứ 2</p>
+                        </div>   
+                    <div class="right">
+                        <div class="lists">
+                            <div class="list">
+                                <img src="image/vay7.jpg" alt="photo 1">
+                                <p class="heading-2">15/08/2021 - bởi: Ego Creative</p>
+                                <h3><a href="">8 mẹo giúp bạn chọn quần jean trong mơ mà không cần đến shop</a></h3>
+                                <p class="content">Để biết được quần jean có vừa với mình hay không theo kích cỡ, bạn không cần phải đứng xếp hàng trong</p>             
+                            </div>
+            
+                            <div class="list">
+                                <img src="image/vay8.jpg" alt="photo 2">
+                                <p class="heading-2">15/08/2021 - bởi: Ego Creative</p>
+                                <h3><a href="">Học lỏm 10 bí quyết từ các stylist hàng đầu để mặc đẹp mà không tốn</a></h3>
+                                <p class="content">1. Nếu bạn muốn chân trông dài hơn, hãy mang một đôi guốc cùng màu da của mình. Chúng đánh lừa thị</p>
+                            </div>
+                
+                            <div class="list">
+                                <img src="image/vay9.jpg" alt="photo 3">
+                                <p class="heading-2">15/08/2021 - bởi: Ego Creative</p>
+                                <h3><a href="">Một cô nàng ăn mặc chất, ngoài khả năng bắt trend còn tuân thủ 4</a></h3>
+                                <p class="content">Những bộ đồ ôm sát body giúp tôn lên đường cong nhưng mặc một chiếc đầm bó chật quá mức hoặc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
         <footer class="footer">
 
