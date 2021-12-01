@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán đơn hàng</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+    <link rel="stylesheet" href="assets/css/mainProduct.css">
+    <link rel="stylesheet" href="assets/css/pay.css">
+</head>
+<body>
+    <div class="grid wide">
+        <div class="row">
+            <div class="col l-8 m-12 c-12">
+                <div class="shop-name">
+                    <a href="index.html" class="shop-name--link link">Ego Wear</a>
+                </div>
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="pay-infor__title">
+                            <h1 class="pay-infor__title--title">
+                                Thông tin nhận hàng
+                            </h1>
+                            <div class="pay-infor__title--login">
+                                <a class="link link-login" href="#">
+                                    <span>
+                                        <i class="far fa-user"></i>
+                                    </span>
+                                    <span>
+                                        Đăng nhập
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="pay-details">
+                            <div class="box-details">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="box-details">
+                                <input type="text" placeholder="Họ và tên">
+                            </div>
+                            <div class="box-details">
+                                <input type="text" placeholder="Số điện thoại(Tùy chọn)">
+                            </div>
+                            <div class="box-details">
+                                <input type="text" placeholder="Địa chỉ cụ thể">
+                            </div>
+                            <div class="box-details">
+                                <select name="tinhthanh" id="">
+                                    <option value="tinhthanh">Tỉnh thành</option>
+                                    <option value="hochiminh">Thành phố Hồ Chí Minh</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="Daknong">Đăk Nông</option>
+                                </select>
+                            </div>
+                            <div class="box-details">
+                                <select name="quanhuyen" id="">
+                                    <option value="quanhuyen">Quận huyện</option>
+                                    <option value="a">Thủ Đức</option>
+                                    <option value="b">Quận 1</option>
+                                    <option value="b">Quận 2</option>
+                                    <option value="c">Quận 3</option>
+                                    <option value="d">Quận 4</option>
+                                    <option value="e">Quận 5</option>
+                                    <option value="f">Quận 6</option>
+                                    <option value="g">Quận 7</option>
+                                </select>
+                            </div>
+                            <div class="box-details">
+                                <textarea name="" id="" cols="30" rows="5" placeholder="Ghi chú"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-12 c-12">
+                        <div class="pay-transport__title">
+                            <h1 class="pay-infor__title--title">
+                                Thông tin nhận hàng
+                            </h1>
+                        </div>
+
+                        <div class="pay-transport__infor">
+                            Vui lòng nhập thông tin giao hàng
+                        </div>
+                        <div class="pay-transport__title">
+                            <h1 class="pay-infor__title--title">
+                                Thanh toán
+                            </h1>
+                        </div>
+                        <div class="pay-transport__pay">
+                            <div class="agree-pay">
+                                <input type="radio"> <label>Thanh toán khi giao hàng (COD)</label>
+                            </div>
+                            <div class="icon-pay">
+                                <i class="far fa-money-bill-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l-4 m-12 c-12 product-pay">
+               <div class="product-pay__title">
+                   <h1 class="product-pay__title--title">
+                       Đơn hàng (3 sản phẩm)
+                   </h1>
+               </div>
+               <div class="product-pay__title--product">
+                   <div class="row order-product">
+                        <div class="col l-9 order-product-product">
+                            <div class="order-product__image">
+                                    <img src="./assets/image/polo-xanh-1.webp" alt="">
+                            </div>
+                            <div class="order-product__infor">
+                                <div class="order-product__infor--name">
+                                        Áo polo phối khóa cổ
+                                </div>
+                                <div class="order-product__infor--size-color">
+                                        <span>M</span><span>/</span><span>Xanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 order-product__price">798.000 <sup><del>đ</del></sup> </div>
+                   </div>
+                   <div class="row order-product">
+                        <div class="col l-9 order-product-product">
+                            <div class="order-product__image">
+                                <img src="./assets/image/polo-xanh-1.webp" alt="">
+                            </div>
+                            <div class="order-product__infor">
+                                <div class="order-product__infor--name">
+                                    Áo polo phối khóa cổ
+                                </div>
+                                <div class="order-product__infor--size-color">
+                                    <span>M</span><span>/</span><span>Xanh</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 order-product__price">798.000 <sup><del>đ</del></sup> </div>
+                   </div>
+               </div>
+               <div class="product-pay__title--discount-code">
+                   <input type="text" placeholder="Nhập mã giảm giá">
+                   <button class="button">Áp dụng</button>
+               </div>
+               <div class="product-pay__title--pay">
+                   <div class="row-flex">
+                       <div class="order-product__infor--name">Tạm tính</div>
+                       <div class="order-product__price"> 1.557.000<sup><del>đ</del></sup></div>
+                   </div>
+                   <div class="row-flex">
+                        <div class="order-product__infor--name">Phí vận chuyển</div>
+                        <div class="order-product__price"> </div>
+                    </div>
+               </div>
+               <div class="product-pay__title--order">
+                    <div class="row-flex">
+                        <div class="order-product__infor--name total-text">Tổng tiền</div>
+                        <div class="order-product__price total-price"> 1.557.000<sup><del>đ</del></sup></div>
+                    </div>
+                    <div class="row-flex row-end">
+                        <button class="button button-end">Đặt hàng</button>
+                        <div class="link-comeback">
+                            <a class="link-login" href="#">
+                                <span>
+                                    <i class="fas fa-angle-left"></i>
+                                </span>
+                                <span>Quay về giỏ hàng</span>
+                            </a>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
