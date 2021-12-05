@@ -29,11 +29,13 @@
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-  
+  .dot-box {
+    padding: 5px 0;
+  }
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -65,12 +67,7 @@
   @media only screen and (max-width: 300px) {
     .prev, .next {font-size: 11px}
   }
-  /*  */
-  .services {
-      width: 90%;
-      margin: auto;
-      box-sizing: border-box;
-  }
+  /* services */
   .services__container {
       width: 100%;
       display: flex;
@@ -79,7 +76,7 @@
   }
   .list__services {
       display: flex;
-      color: var(--secondary);
+      color: #ccc;
   }
   .list__services--icon {
       font-size: 32px;
@@ -87,12 +84,19 @@
       vertical-align: middle;
   }
   .services__content--title {
-      color: var(--gray-dark);
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--secondary);
   }
   .services__content--content {
-      font-size: 12px;
+      font-size: 1.2rem
   }
-  
+  .services__content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
   
   /* tablet */
   @media screen and (min-width: 600px) and (max-width: 1023px) {
@@ -141,17 +145,49 @@
   }
   
   /* banner  */
-  .banner__container {
-      width: 90%;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-  }
-  .banner__container-column-left {
-      position: relative;
-      width: 100%;
-  }
+.banner__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banner__container-column-left {
+    position: relative;
+    width: 100%;
+}
+.banner__container-column-left::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    border: solid var(--white);
+    border-width: 0 1px ;
+    transform: translate(-50%, -50%) scaleY(0);
+    transform-origin: center;
+    transition: all 0.2s linear;
+}
+.banner__container-column-left::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    border: solid var(--white);
+    border-width: 1px 0;
+    transform: translate(-50%, -50%) scaleX(0);
+    transform-origin: center;
+    transition: all 0.2s linear;
+}
+.banner__container-column-left:hover::before {
+    transform: translate(-50%, -50%) scaleY(1);
+}
+.banner__container-column-left:hover::after {
+    transform: translate(-50%, -50%) scaleX(1);
+}
   
   .banner__container-column {
       position: relative;
@@ -162,229 +198,96 @@
       display: flex;
       justify-content: space-between;
   }
-  .banner__container-row-column {
-      position: relative;
-      width: 48%;
-  }
-  .banner1,
-  .banner2, 
-  .banner3,
-  .banner4 {
-      width: 100%;
-  }
-  .banner__container-row-under {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-  }
-  
-  /* effect banner */
-  .banner__container-column-left:hover .banner--effect1 {
-      position: absolute;
-      top: 25px;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: var(--light);
-      transition: 2s;
-      /* transition: all .8s ease-in-out;
-      transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 
-  45deg) translate3d(0, -120%, 0); */
-  
-  }
-  .banner__container-column-left:hover .banner--effect2 {
-      position: absolute;
-      bottom: 25px;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-column-left:hover .banner--effect3 {
-      position: absolute;
-      top: 0;
-      left: 25px;
-      height: 100%;
-      width: 2px;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-column-left:hover .banner--effect4 {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      height: 100%;
-      width: 2px;
-      background: var(--light);
-      transition: 2s;
-  }
-  /*  */
-  .banner__container-row-column:hover .banner--effect1 {
-      position: absolute;
-      top: 25px;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-row-column:hover .banner--effect2 {
-      position: absolute;
-      bottom: 25px;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-row-column:hover .banner--effect3 {
-      position: absolute;
-      top: 0;
-      left: 25px;
-      height: 100%;
-      width: 2px;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-row-column:hover .banner--effect4 {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      height: 100%;
-      width: 2px;
-      background: var(--light);
-      transition: 2s;
-  }
-  /*  */
-  .banner__container-row-under:hover .banner--effect1 {
-      position: absolute;
-      top: 25px;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-row-under:hover .banner--effect2 {
-      position: absolute;
-      bottom: 25px;
-      left: 0;
-      height: 2px;
-      width: 100%;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-row-under:hover .banner--effect3 {
-      position: absolute;
-      top: 0;
-      left: 25px;
-      height: 100%;
-      width: 2px;
-      background: var(--light);
-      transition: 2s;
-  }
-  .banner__container-row-under:hover .banner--effect4 {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      height: 100%;
-      width: 2px;
-      background: var(--light);
-      transition: 2s;
-  }
-  
-  /* .radio-select-color--main {
-      margin-left: 8px !important;
-      margin-right: 0 !important;
-  } */
-  .checkmark--main {
-      width: 25px !important;
-      height: 25px !important;
-  }
-  .radio-select-color--main {
-      padding-left: 25px !important;
-      margin-left: 8px !important;
-      margin-right: 0 !important;
-  }
-  
-  
-  
-  
-  
-  
-  /* .banner__container-column-left:hover .banner--effect1 {
-      position: absolute;
-      top: 10px;
-      left: 0px;
-      width: 30px;
-      height: 4px;
-      background-color: rgb(61, 236, 198);
-      animation-name: effect1;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      border-radius: 5px;
-  }
-  @keyframes effect1 {
-      50%  {background-color:rgb(61, 236, 198); left: 95%; top:10px;}
-  }
-  .banner__container-column-left:hover .banner--effect2 {
-      position: absolute;
-      bottom: 30px;
-      left: 95%;
-      width: 30px;
-      height: 4px;
-      background-color: rgb(61, 236, 198);
-      animation-name: effect2;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      border-radius: 5px;
-  
-  }
-  @keyframes effect2 {
-      50%  {background-color:rgb(61, 236, 198); left:0px; bottom:30px;}
-  }
-  .banner__container-column-left:hover .banner--effect3 {
-      position: absolute;
-      top: 10px;
-      left: 95%;
-      width: 4px;
-      height: 30px;
-      background-color: rgb(61, 236, 198);
-      animation-name: effect3;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      border-radius: 5px;
-  }
-  @keyframes effect3 {
-      50%  {background-color:rgb(61, 236, 198); left: 95%; top: 90%;}
-  }
-  .banner__container-column-left:hover .banner--effect4 {
-      position: absolute;
-      top: 90%;
-      left: 10px;
-      width: 4px;
-      height: 30px;
-      background-color: rgb(61, 236, 198);
-      animation-name: effect;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      border-radius: 5px;
-  }
-    @keyframes effect {
-      50%  {background-color:rgb(61, 236, 198); left: 10px; top: 10px;}
-  } */
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+.banner__container-row-column {
+    position: relative;
+    width: 48%;
+}
+.banner__container-row-column::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    border: solid var(--white);
+    border-width: 0 1px;
+    transform: translate(-50%, -50%) scaleY(0);
+    transform-origin: center;
+    transition: all 0.2s linear;
+}
+.banner__container-row-column:hover::before {
+    transform: translate(-50%, -50%) scaleY(1);
+}
+.banner__container-row-column::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    border: solid var(--white);
+    border-width: 1px 0;
+    transform: translate(-50%, -50%) scaleX(0);
+    transform-origin: center;
+    transition: all 0.2s linear;
+}
+.banner__container-row-column:hover::after {
+    transform: translate(-50%, -50%) scaleX(1);
+}
+.banner1,
+.banner2, 
+.banner3,
+.banner4 {
+    width: 100%;
+}
+.banner__container-row-under {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banner__container-row-under::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    border: solid var(--white);
+    border-width: 0 1px;
+    transform: translate(-50%, -50%) scaleY(0);
+    transform-origin: center;
+    transition: all 0.2s linear;
+}
+.banner__container-row-under:hover::before {
+    transform: translate(-50%, -50%) scaleY(1);
+}
+.banner__container-row-under::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    border: solid var(--white);
+    border-width: 1px 0;
+    transform: translate(-50%, -50%) scaleX(0);
+    transform-origin: center;
+    transition: all 0.2s linear;
+}
+.banner__container-row-under:hover::after {
+    transform: translate(-50%, -50%) scaleX(1);
+}
+
+.checkmark--main {
+    width: 25px !important;
+    height: 25px !important;
+}
+.radio-select-color--main {
+    padding-left: 25px !important;
+    margin-left: 8px !important;
+    margin-right: 0 !important;
+}

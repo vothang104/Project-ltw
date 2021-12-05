@@ -23,6 +23,37 @@
         align-items: center;
         height: 70px;
     }
+    /*** product *****/
+    .product__img {
+        height: 300px;
+    }
+    .new-product .row .col:last-child .product .view-more {
+        height: 300px;
+    }
+    .small-container .row .col:last-child .product .view-more {
+        height: 300px;
+    }
+    .toast {
+        width: 40vw;
+    }
+    /****** top sell ***********/
+    .top-product {
+        height: 900px;
+    }
+    .top-product__video {
+        width: 100%;
+        height: 400px;
+        top: 500px;
+    }
+    .top-product__list {
+        height: 500px;
+        top: 0;
+        width: 100%;
+    }
+    /*************** news ****************/
+    .news-left {
+        margin-bottom: 24px;
+    }
 }
 /*************************** mobile */
 @media only screen and (max-width: 739px) {
@@ -40,12 +71,7 @@
     }.header-up__search {
         justify-content: space-between;
     }
-    .modal-sigup {
-        left: 5vw;
-        width: 90vw;
-    }
-    .modal-login {
-        left: 5vw;
-        width: 90vw;
+    .toast {
+        width: 50vw;
     }
 }
