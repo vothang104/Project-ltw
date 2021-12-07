@@ -154,7 +154,8 @@ i.menu-mobile__item-iconuser {
 /* search */
 
 .header-up__search-input {
-    flex-basis: 70%;
+    flex-grow: 1;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     border: 1px solid var(--gray-dark);
@@ -178,6 +179,10 @@ i.menu-mobile__item-iconuser {
 }
 
 .header-up__search-input form button {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white);
     border: none;
     outline: none;
@@ -188,7 +193,6 @@ i.menu-mobile__item-iconuser {
     display: block;
     color: var(--gray-dark);
     font-weight: 300;
-    padding-right: 10px;
     cursor: pointer;
 }
 
