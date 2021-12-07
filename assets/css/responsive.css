@@ -54,6 +54,10 @@
     .news-left {
         margin-bottom: 24px;
     }
+    /**** gift in detailproduct ****/
+    .detailproduct-right__voucher-gift {
+        width: 25%;
+    }
 }
 /*************************** mobile */
 @media only screen and (max-width: 739px) {
@@ -73,5 +77,9 @@
     }
     .toast {
         width: 50vw;
+    }
+    /**** gift in detailproduct ****/
+    .detailproduct-right__voucher-gift {
+        width: 28%;
     }
 }

@@ -43,7 +43,7 @@ html {
     color: var(--white);
     font-size: 1.6rem;
     font-weight: 500;
-    min-width: 240px;
+    min-width: 200px;
     text-align: center;
     border-radius: 30px;
     cursor: pointer;
