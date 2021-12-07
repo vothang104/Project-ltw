@@ -51,25 +51,18 @@
                                 <input type="text" placeholder="Địa chỉ cụ thể">
                             </div>
                             <div class="box-details">
-                                <select name="tinhthanh" id="">
-                                    <option value="tinhthanh">Tỉnh thành</option>
-                                    <option value="hochiminh">Thành phố Hồ Chí Minh</option>
-                                    <option value="hanoi">Hà Nội</option>
-                                    <option value="danang">Đà Nẵng</option>
-                                    <option value="Daknong">Đăk Nông</option>
+                                <select name="province" id="province">
+                                    <option class="province-option" value="">Tỉnh thành</option>
                                 </select>
                             </div>
                             <div class="box-details">
-                                <select name="quanhuyen" id="">
-                                    <option value="quanhuyen">Quận huyện</option>
-                                    <option value="a">Thủ Đức</option>
-                                    <option value="b">Quận 1</option>
-                                    <option value="b">Quận 2</option>
-                                    <option value="c">Quận 3</option>
-                                    <option value="d">Quận 4</option>
-                                    <option value="e">Quận 5</option>
-                                    <option value="f">Quận 6</option>
-                                    <option value="g">Quận 7</option>
+                                <select name="district" id="district">
+                                    <option class='district-option' value="">Quận, huyện</option>
+                                </select>
+                            </div>
+                            <div class="box-details">
+                                <select name="ward" id="ward">
+                                    <option class='ward-option' value="">Xã, phường</option>
                                 </select>
                             </div>
                             <div class="box-details">
@@ -170,7 +163,7 @@
                                 <span>
                                     <i class="fas fa-angle-left"></i>
                                 </span>
-                                <span>Quay về giỏ hàng</span>
+                                <a class="link-cart" href="./cart.html">Quay về giỏ hàng</a>
                             </a>
                         </div>
                     </div>
@@ -178,5 +171,6 @@
             </div>
         </div>
     </div>
+    <script src="./assets/js/pay.js"></script>
 </body>
 </html>
