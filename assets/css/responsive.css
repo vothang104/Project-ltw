@@ -1,3 +1,21 @@
+@media only screen and (max-width: 1239px) {
+    .product__action:hover .product__action-wrap{
+        transform: translateY(0);
+    }
+    .product__action-option {
+        display: none;
+    }
+    .product__size {
+        display: none;
+    }
+    .product__img {
+        height: 280px;
+    }
+    
+}
+
+
+
 /******************** taplet */
 @media only screen and (max-width: 1023px) {
     .hide-on-taplet {
@@ -28,6 +46,9 @@
     .toast {
         width: 40vw;
     }
+    .product__action:hover .product__action-wrap{
+        transform: translateY(0);
+    }
     /****** top sell ***********/
     .top-product {
         height: 900px;
@@ -50,12 +71,39 @@
     .detailproduct-right__voucher-gift {
         width: 25%;
     }
+    /*********** sort product ******/
+    .sort-product__item {
+        font-size: 1.2rem;
+    }
+    /************ product  detail ********/
+    .detailproduct-viewed .product .product__img {
+        height: 320px;
+    }
+    .detailproduct-same .product .product__img {
+        height: 320px;
+    }
     
 }
 /*************************** mobile */
 @media only screen and (max-width: 739px) {
     html {
         font-size: 50%;
+    }
+    /******* login *******/
+    .login-board {
+        width: 80%;
+    }
+    .login-content {
+        top: 90px;
+        margin-top: 0;
+    }
+    /********** signup **********/
+    .signup-board {
+        width: 80%;
+    }
+    .signup-content {
+        top: 90px;
+        margin-bottom: 0;
     }
     /****** header ***********/
     .hide-on-mobile {
@@ -72,6 +120,7 @@
     }.header-up__search {
         justify-content: space-between;
     }
+    /********** toast *********/
     .toast {
         width: 50vw;
     }
@@ -95,9 +144,52 @@
     .key-top__item-link {
         flex-basis: 25%;
     }
-    /**** gift in detailproduct ****/
+    /**** detailproduct ****/
     .detailproduct-right__voucher-gift {
         width: 28%;
+    }
+    .container-detail {
+        top: 90px;
+        margin-top: 0;
+    }
+    .detailproduct-left {
+        height: 80vh;
+    }
+    .detailproduct-left__slide-choose__img {
+        height: 100px;
+    }
+    /************ newproduct **********/
+    .container-newproduct {
+        top: 90px;
+        margin-top: 0;
+    }
+    /********* enjoy ***********/
+    .content-enjoy {
+        top: 90px;
+        margin-bottom: 0;
+    }
+    /**** cart *****/
+    .content-cart {
+        top: 90px;
+        margin-top: 0;
+    }
+    .cart-product__table-head__info ,
+    .cart-product__table-head__details {
+        width: 50%;
+    }
+    .cart-product__table-details-product,
+    .cart-product__table-info-product {
+        width: 50%;
+    }
+    /******** question ******/
+    .content-question {
+        top: 90px;
+        margin-top: 0;
+    }
+    /******* contact *********/
+    .content-contact {
+        top: 90px;
+        margin-top: 0;
     }
 }
 /********************** mobile min **********************/
@@ -111,7 +203,7 @@
     }
      /***************** top product ****************/
     .top-product {
-        height: 1220px;
+        height: 800px;
     }
     /********** news ***********/
     .news-right__item {
@@ -126,5 +218,26 @@
     }
     .btn.btn-cart {
         margin-bottom: 24px;
+    }
+    .detailproduct-left {
+        height: 60vh;
+    }
+    .detailproduct-left__slide-choose__img {
+        height: 100px;
+    }
+    /*********** sort product ******/
+    .sort-product__item {
+        font-size: 1rem;
+    }
+    /********* index *********/
+    .product .product__img {
+        height: 280px !important;
+    }
+    .product .view-more {
+        height: 280px !important;
+    }
+    /****** cart ***********/
+    .cart-product__table-info-product__img {
+        height: 90px;
     }
 }

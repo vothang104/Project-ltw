@@ -78,10 +78,10 @@
 
 .product__img {
     position: relative;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     display: block;
-    height: 400px;
+    height: 320px;
     overflow-y: hidden;
 }
 .product__color {
@@ -202,14 +202,14 @@
     display: flex;
     height: 100%;
     align-items: center;
-    width: fit-content;
+    width: auto;
     outline: none;
     border: none;
     border-radius: 5px;
     color: var(--white);
     font-size: 1.4rem;
     background-color: var(--red);
-    padding: 5px 10px;
+    padding: 5px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -227,8 +227,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 1rem;
-    transform: translate(-25%, 25%);
+    font-size: 0.8rem;
+    transform: translate(-25%, 6%);
 }
 .product__action-buy i{
     margin-right: 5px;

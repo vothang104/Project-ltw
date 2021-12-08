@@ -19,13 +19,13 @@
         <header class="header">
             <div class="grid wide">
                 <div class="row header-up">
-                    <div class="col l-3 m-2 c-0">
+                    <div class="col l-3 m-2 c-0 min-0">
                         <a href="./index.html" class="header-up__logo hide-on-mobile">
                             <img src="//bizweb.dktcdn.net/100/434/926/themes/832778/assets/logo.png?1631675028757"
                                 alt="logo">
                         </a>
                     </div>
-                    <div class="col l-6 m-5 c-6">
+                    <div class="col l-6 m-5 c-8 min-8">
                         <div class="header-up__search">
                             <div class="menu-mobile show-on-mobile">
                                 <label for="check-menu"><i class="menu-mobile__icon fas fa-bars"></i></label>
@@ -83,9 +83,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-3 m-5 c-6">
+                    <div class="col l-3 m-5 c-4 min-4">
                         <div class="header-up__options">
-                            <div class="header-up__options-login">
+                            <div class="header-up__options-login hide-on-mobile">
                                 <i class="fas fa-user"></i>
                                 <a href="./login.html">Đăng nhập</a>
                                 <!-- <a href="">vothang</a>
@@ -120,7 +120,7 @@
                             <a href="./index.html" class="header-down__link">Trang chủ</a>
                         </div>
                         <div class="col header-down__wrap-link">
-                            <a href="" class="header-down__link">Sản phẩm</a>
+                            <a class="header-down__link">Sản phẩm</a>
                             <i class="header-down__icon fas fa-caret-down"></i>
                             <ul class="header-down__list-product">
                                 <li class="header-down__product">
@@ -181,10 +181,14 @@
                             <a href="#" class="header-down__link">Tin tức</a>
                             <i class="header-down__icon fas fa-caret-down"></i>
                             <ul class="header-down__list-product header-down__list-news">
-                                <li class="header-down__product header-down__news"><a class="header-down__news-link" href="./news.html">Tin xu hướng</a></li>
-                                <li class="header-down__product header-down__news"><a class="header-down__news-link" href="./news.html">Tin mẹo vặt</a></li>
-                                <li class="header-down__product header-down__news"><a class="header-down__news-link" href="./news.html">Tin khuyến mãi</a></li>
-                                <li class="header-down__product header-down__news"><a class="header-down__news-link" href="./news.html">Thẻ quà tặng</a></li>
+                                <li class="header-down__product header-down__news"><a class="header-down__news-link"
+                                        href="./news.html">Tin xu hướng</a></li>
+                                <li class="header-down__product header-down__news"><a class="header-down__news-link"
+                                        href="./news.html">Tin mẹo vặt</a></li>
+                                <li class="header-down__product header-down__news"><a class="header-down__news-link"
+                                        href="./news.html">Tin khuyến mãi</a></li>
+                                <li class="header-down__product header-down__news"><a class="header-down__news-link"
+                                        href="./news.html">Thẻ quà tặng</a></li>
                             </ul>
                         </div>
                         <div class="col header-down__wrap-link">
@@ -262,7 +266,7 @@
                     </div>
                     <div class="cart-product__pay">
                         <span class="cart-product__pay-total">Tổng tiền: <span>720000</span></span>
-                        <a href="#" class="btn cart-product__pay-btn-pay">Thanh toán</a>
+                        <a href="#" class="cart-product__pay-btn-pay">Thanh toán</a>
                     </div>
                 </div>
             </div>
@@ -271,49 +275,62 @@
             <div class="grid wide">
                 <div class="footer-up">
                     <div class="row footer-up-wrap">
-                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                        <div class="col l-3 m-6 c-12 min-12 footer-up-wrap">
                             <div class="footer-up__introduction">
                                 <div class="footer-up__introduction-who">
                                     <h3>CHÚNG TÔI LÀ AI?</h3>
-                                    <p>Copyright@ 2021 Công ty TNHH thời trang Ego Wear Ego Wear đang trong giai đoạn phát triển mạnh với nhiều mặt hàng phong phú giá cả cạnh tranh, mong muốn đem đến chất lượng tốt nhất cho khách hàng. Địa chỉ: 221 Chùa
-                                        Bộc, Đống Đa, Hà Nội, Hà Nội Điện thoại: 1900 6750 - Email: support@sapo.vn
+                                    <p>Copyright@ 2021 Công ty TNHH thời trang Ego Wear Ego Wear
+                                        đang trong giai đoạn phát triển mạnh với nhiều mặt hàng
+                                        phong phú giá cả cạnh tranh, mong muốn đem đến chất lượng
+                                        tốt nhất cho khách hàng. Địa chỉ: 221 Chùa
+                                        Bộc, Đống Đa, Hà Nội, Hà Nội Điện thoại: 1900 6750 - Email:
+                                        support@sapo.vn
                                     </p>
                                 </div>
                                 <div class="footer-up__introduction-community">
                                     <h3>MẠNG XÃ HỘI</h3>
                                     <div class="footer-up__introduction-community-wrap-icon">
-                                        <a style="--main-color:var(--blue)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:var(--blue)" href="#"
+                                            class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-facebook-f footer-iconfacebook "></i>
                                         </a>
-                                        <a style="--main-color:aqua" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:aqua" href="#"
+                                            class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-instagram footer-iconinstagram"></i>
                                         </a>
-                                        <a style="--main-color:var(--orange)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:var(--orange)" href="#"
+                                            class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-google footer-icongoole"></i>
                                         </a>
-                                        <a style="--main-color:var(--red)" href="#" class="footer-up__introduction-community-wrap-icon__icon">
+                                        <a style="--main-color:var(--red)" href="#"
+                                            class="footer-up__introduction-community-wrap-icon__icon">
                                             <i class="fab fa-youtube footer-iconyoutube"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                        <div class="col l-3 m-6 c-3 min-3 footer-up-wrap ">
                             <div class="footer-up__privacy">
                                 <h3>CHÍNH SÁCH</h3>
                                 <ul class="footer-up__privacy-list">
-                                    <li class="footer-up__privacy-item"><a href="#">Trang chủ</a></li>
-                                    <li class="footer-up__privacy-item"><a href="#">Sản phẩm</a></li>
-                                    <li class="footer-up__privacy-item"><a href="#">Xu hướng</a></li>
-                                    <li class="footer-up__privacy-item"><a href="#">Trang phục</a></li>
-                                    <li class="footer-up__privacy-item"><a href="#">Phụ kiện</a></li>
+                                    <li class="footer-up__privacy-item"><a href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="footer-up__privacy-item"><a href="#">Sản phẩm</a>
+                                    </li>
+                                    <li class="footer-up__privacy-item"><a href="#">Xu hướng</a>
+                                    </li>
+                                    <li class="footer-up__privacy-item"><a href="#">Trang phục</a>
+                                    </li>
+                                    <li class="footer-up__privacy-item"><a href="#">Phụ kiện</a>
+                                    </li>
                                     <li class="footer-up__privacy-item"><a href="#">Tin tức</a></li>
                                     <li class="footer-up__privacy-item"><a href="#">Câu hỏi</a></li>
                                     <li class="footer-up__privacy-item"><a href="#">Liên hệ</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                        <div class="col l-3 m-6 c-3 min-3 footer-up-wrap ">
                             <div class="footer-up__khu">
                                 <h3>KHU BÁN HÀNG</h3>
                                 <ul class="footer-up__khu-list">
@@ -328,15 +345,20 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col l-3 m-6 c-12 footer-up-wrap ">
+                        <div class="col l-3 m-6 c-3 min-3 footer-up-wrap ">
                             <div class="footer-up__support">
                                 <h3>HỖ TRỢ CHUNG</h3>
                                 <ul class="footer-up__support-list">
-                                    <li class="footer-up__support-item"><a href="#">Trang chủ</a></li>
-                                    <li class="footer-up__support-item"><a href="#">Sản phẩm</a></li>
-                                    <li class="footer-up__support-item"><a href="#">Xu hướng</a></li>
-                                    <li class="footer-up__support-item"><a href="#">Trang phục</a></li>
-                                    <li class="footer-up__support-item"><a href="#">Phụ kiện</a></li>
+                                    <li class="footer-up__support-item"><a href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="footer-up__support-item"><a href="#">Sản phẩm</a>
+                                    </li>
+                                    <li class="footer-up__support-item"><a href="#">Xu hướng</a>
+                                    </li>
+                                    <li class="footer-up__support-item"><a href="#">Trang phục</a>
+                                    </li>
+                                    <li class="footer-up__support-item"><a href="#">Phụ kiện</a>
+                                    </li>
                                     <li class="footer-up__support-item"><a href="#">Tin tức</a></li>
                                     <li class="footer-up__support-item"><a href="#">Câu hỏi</a></li>
                                     <li class="footer-up__support-item"><a href="#">Liên hệ</a></li>

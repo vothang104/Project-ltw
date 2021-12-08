@@ -4,7 +4,7 @@
     padding: 0;
 }
 .grid.wide {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
 }
 .row {
@@ -23,12 +23,7 @@
 }
 /********** phần tự thêm ****************/
 @media only screen and (max-width: 469px) {
-    .row {
-        margin: 0;
-    }
-    .minol {
-        padding: 0;
-    }
+    
     .min-0 {
         display: none;
     }
@@ -206,7 +201,7 @@
 /* tablet -> pc low */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
     .wide {
-        width: 644px;
+        width: 720px;
     }
 }
 /* -> tablet */

@@ -20,6 +20,12 @@
 .container-detail__direct span:last-of-type {
     color: var(--orange);
 }
+.detailproduct-viewed .product .product__img {
+    height: 400px;
+}
+.detailproduct-same .product .product__img {
+    height: 400px;
+}
 /*********************** detail product left**************/
 .detailproduct {
     margin-bottom: 24px;

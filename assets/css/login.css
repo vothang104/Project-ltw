@@ -131,6 +131,7 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     font-size: 1.4rem;
     background-color: var(--white);
     color: var(--gray-dark);
