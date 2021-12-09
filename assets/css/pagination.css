@@ -19,5 +19,10 @@
 .pagination__item.pagination--active .pagination__link{
     background-color: var(--orange);
     color: var(--white);
-    border: none;
+    border-color: var(--orange);
+}
+.pagination__link:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    border-color: var(--orange);
 }

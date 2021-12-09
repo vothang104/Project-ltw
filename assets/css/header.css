@@ -58,7 +58,8 @@
 
 .menu-mobile .menu-mobile__icon {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 200;
     color: #999;
 }
 
@@ -80,7 +81,7 @@
     left: 0;
     transform: translateX(-100%);
     opacity: 0;
-    width: 40vw;
+    width: 60vw;
     height: 100vh;
     background-color: var(--white);
     transition: all 0.3s ease-in;
@@ -96,28 +97,30 @@
 }
 
 .menu-mobile__item:first-child {
-    background-color: var(--orange);
+    background-color: var(--red);
+    border: none;
 }
 
 .menu-mobile__item {
     display: flex;
+    align-items: center;
     padding: 16px 10px;
-    border-bottom: 1px solid var(--orange);
+    border-bottom: 1px solid var(--light);
 }
 
 .menu-mobile__item i {
     font-size: 1.6rem;
-    color: var(--orange);
+    color: var(--red);
     vertical-align: middle;
     margin-right: 5px;
     cursor: pointer;
 }
 
-.menu-mobile__item a label {
+.menu-mobile__item a {
     display: inline-block;
     width: 100%;
     font-size: 1.4rem;
-    color: var(--orange);
+    color: var(--secondary);
     padding-top: 2px;
 }
 
@@ -129,14 +132,15 @@
 }
 
 i.menu-mobile__item-iconuser {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--white);
 }
 
-.menu-mobile__item-nameuser {
+a.menu-mobile__item-nameuser {
     display: inline-block;
     padding-top: 20px;
     margin-left: 5px;
+    font-size: 1.4rem;
     color: var(--white);
 }
 
