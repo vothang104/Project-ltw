@@ -78,7 +78,8 @@
 
 .product__img {
     position: relative;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
     display: block;
     height: 320px;
@@ -156,10 +157,16 @@
     text-transform: uppercase;
 }
 .product__name {
+    height: 1.4rem;
     margin-bottom: 5px;
     font-size: 1.4rem;
     color: var(--gray-dark);
     text-transform: uppercase;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .product__price {
     display: flex;
