@@ -134,8 +134,38 @@ h4 {
     height: 320px;
 }
 .top-product__list-wrap {
+    position: relative;
+    width: auto;
+    overflow: auto;
     background-color: var(--white);
     padding: 10px;
+    cursor: grab;
+}
+.top-product__list-icon {
+    display: block;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -100%);
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+.top-product__list-icon:hover {
+    color: rgba(0, 0, 0, 0.479);
+    background-color: var(--white);
+}
+.top-product__list-wrap .row {
+    flex-wrap: nowrap;
+}
+.top-product__list-wrap::-webkit-scrollbar {
+    display: none;
 }
 .top-product .btn-action {
     padding: 5px;
