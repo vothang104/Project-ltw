@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="../assets/css/grid.css">
     <link rel="stylesheet" href="../assets/css/admin/header.css">
     <link rel="stylesheet" href="../assets/css/admin/sidebar.css">
-    <link rel="stylesheet" href="../assets/css/admin/myaccount.css">
-    <title>Tài khoản của tôi</title>
+    <link rel="stylesheet" href="../assets/css/admin/manageorder.css">
+    <link rel="stylesheet" href="../assets/css/admin/pagination.css">
+    <title>Quản lý đơn hàng</title>
 </head>
 <body>
     <div class="app">
@@ -43,7 +44,7 @@
                                     </a>
                                 </li>
                                 <li class="header__welcome-item__board-row">
-                                    <a href="./createaccount.html" class="header__welcome-item__board-link">
+                                    <a href="" class="header__welcome-item__board-link">
                                         <i class="header__welcome-item__board-icon fas fa-user-plus"></i>
                                         Tạo tài khoản
                                     </a>
@@ -105,55 +106,73 @@
                                 <a href="./manageorder.html" class="sidebar__item-link">Quản lý đơn hàng</a>
                             </li>
                         </ul>
-                    </div>   
+                    </div>  
                     <div class="col l-9">
-                        <div class="direct"><span><i class="direct-icon fas fa-home"></i>Trang chủ</span> &#160; &#62; &#160; Tài khoản của tôi</div>
-                        <div class="myaccount__board">
-                            <div class="myaccount__board-title">
-                                <h2>Thông Tin Của Tôi</h2>
-                                <p>Quản lý tài khoản của bạn</p>
-                                <form action="" class="myaccount__board-form">
-                                    <div class="form-group">
-                                        <lable class="myaccout__form-label">Tên tài khoản</lable>
-                                        <input type="text" class="myaccount__form-input">
+                        <div class="direct"><span><i class="direct-icon fas fa-home"></i>Trang chủ</span> &#160; &#62; &#160; Quản lý đơn hàng </div>
+                        <div class="order">
+                            <h1 class="order__title">Quản Lý Đơn Hàng</h1>
+                            <div class="order__table">
+                                <div class="order__table-head">
+                                    <div class="order__table-row">
+                                        <div class="order__table-column column-id">Mã đơn hàng</div>
+                                        <div class="order__table-column column-date">Ngày giao hàng</div>
+                                        <div class="order__table-column column-total">Tổng tiền</div>
+                                        <div class="order__table-column column-status">Trạng thái</div>
                                     </div>
-                                    <div class="form-group">
-                                        <lable class="myaccout__form-label">Email</lable>
-                                        <input type="email" class="myaccount__form-input">
+                                </div>
+                                <div class="order__table-body">
+                                    <div class="order__table-row">
+                                        <div class="order__table-column column-id">
+                                            <a title = 'Chi tiết đơn hàng' href="./orderdetail.html" class="column-id__link">1</a>
+                                        </div>
+                                        <div class="order__table-column column-date">23-12-2021</div>
+                                        <div class="order__table-column column-total">389.000đ</div>
+                                        <div class="order__table-column column-status">shipping</div>
                                     </div>
-                                    <div class="form-group">
-                                        <lable class="myaccout__form-label">Số điện thoại</lable>
-                                        <input type="text" class="myaccount__form-input">
+                                    <div class="order__table-row">
+                                        <div class="order__table-column column-id">
+                                            <a title = 'Chi tiết đơn hàng' href="./orderdetail.html" class="column-id__link">2</a>
+                                        </div>
+                                        <div class="order__table-column column-date">23-12-2021</div>
+                                        <div class="order__table-column column-total">389.000đ</div>
+                                        <div class="order__table-column column-status">comfirmed</div>
                                     </div>
-                                    <span class="myaccount__change-password">Đổi mật khẩu</span>
-                                    <div class="form-group hidden">
-                                        <lable class="myaccout__form-label">Mật khẩu mới</lable>
-                                        <input type="password" class="myaccount__form-input">
+                                    <div class="order__table-row">
+                                        <div class="order__table-column column-id">
+                                            <a title = 'Chi tiết đơn hàng' href="./orderdetail.html" class="column-id__link">3</a>
+                                        </div>
+                                        <div class="order__table-column column-date">23-12-2021</div>
+                                        <div class="order__table-column column-total">389.000đ</div>
+                                        <div class="order__table-column column-status">pending</div>
                                     </div>
-                                    <div class="myaccount__form-btn-wrap">
-                                        <button class="myaccount__form-btn">Lưu</button>
+                                    <div class="order__table-row">
+                                        <div class="order__table-column column-id">
+                                            <a title = 'Chi tiết đơn hàng' href="./orderdetail.html" class="column-id__link">4</a>
+                                        </div>
+                                        <div class="order__table-column column-date">23-12-2021</div>
+                                        <div class="order__table-column column-total">389.000đ</div>
+                                        <div class="order__table-column column-status">shipped</div>
                                     </div>
-                                </form>
+                                </div>
                             </div>
+                        </div>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__list-item">
+                                    <a href="" class="pagination__list-item__link active">1</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="" class="pagination__list-item__link">2</a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="" class="pagination__list-item__link"><i class="fas fa-chevron-right"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script>
-        const formHidden = document.querySelector('.hidden');
-        const btnHidden = document.querySelector('.myaccount__change-password');
-        let isOppen = false;
-        btnHidden.onclick = e => {
-            if(!isOppen) {
-                formHidden.style = `display: block`;
-                isOppen = !isOppen;
-            }else {
-                formHidden.style = `display: none`;
-                isOppen = !isOppen;
-            }
-        }
-    </script>
 </body>
 </html>

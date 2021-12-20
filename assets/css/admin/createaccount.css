@@ -8,6 +8,7 @@
 .createaccount__board-title {
     text-align: center;
     font-size: 2.5rem;
+    font-weight: 300;
     color: var(--blue);
     padding: 20px 0;
 }

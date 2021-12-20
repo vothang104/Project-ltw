@@ -7,9 +7,14 @@
     border-radius: 5px;
     padding: 20px;
 }
-.myaccount__board-title h2,
+.myaccount__board-title h2 {
+    color: var(--blue);
+    font-weight: 300;
+}
+
 .myaccount__board-title p{
-    color: var(--gray-dark);
+    color: var(--gray);
+    font-size: 1.2rem;
 }
 .myaccount__board-title h2 {
     font-size: 2rem;
